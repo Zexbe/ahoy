@@ -9,7 +9,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Check Format
+      uses: icepuma/rust-action@1.41.0
+      with:
+        args: cargo fmt -- --check
+    - name: Check Clippy
+      uses: icepuma/rust-action@1.41.0
+      with:
+        args: cargo clippy -- -Dwarnings
     - name: Build
-      run: cargo build --verbose
+      uses: icepuma/rust-action@1.41.0
+      with:
+        args: cargo build --verbose
     - name: Run tests
-      run: cargo test --verbose
+      uses: icepuma/rust-action@1.41.0
+      with:
+        args: cargo test --verbose
+    - name: Run ignored tests
+      uses: icepuma/rust-action@1.41.0
+      with:
+        args: cargo test --verbose -- --ignored
