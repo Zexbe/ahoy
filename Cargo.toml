@@ -3,7 +3,26 @@ name = "ahoy"
 version = "0.0.0"
 authors = ["Zexbe <zexbe@users.noreply.github.com>"]
 edition = "2018"
+# A short blurb about the package. This is not rendered in any format when
+# uploaded to crates.io (aka this is not markdown).
+description = "Command line announcement tool"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/Zexbe/ahoy"
+
+readme = "README.md"
+
+# This is a list of up to five categories where this crate would fit.
+# Categories are a fixed list available at crates.io/category_slugs, and
+# they must match exactly.
+categories = ["command-line-utilities"]
+
+license = "MIT"
+
+[badges]
+
+is-it-maintained-issue-resolution = { repository = "https://github.com/Zexbe/ahoy" }
+is-it-maintained-open-issues = { repository = "https://github.com/Zexbe/ahoy" }
+
+maintenance = { status = "actively-developed" }
 
 [dependencies]
