@@ -1,6 +1,6 @@
 [package]
 name = "ahoy"
-version = "0.0.0"
+version = "0.0.1"
 authors = ["Zexbe <zexbe@users.noreply.github.com>"]
 edition = "2018"
 # A short blurb about the package. This is not rendered in any format when
