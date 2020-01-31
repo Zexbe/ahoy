@@ -20,8 +20,8 @@ license = "MIT"
 
 [badges]
 
-is-it-maintained-issue-resolution = { repository = "https://github.com/Zexbe/ahoy" }
-is-it-maintained-open-issues = { repository = "https://github.com/Zexbe/ahoy" }
+is-it-maintained-issue-resolution = { repository = "Zexbe/ahoy" }
+is-it-maintained-open-issues = { repository = "Zexbe/ahoy" }
 
 maintenance = { status = "actively-developed" }
 
